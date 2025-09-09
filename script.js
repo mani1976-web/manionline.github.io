@@ -1,2 +1,4 @@
-// Placeholder for future functionality
-console.log("Website loaded successfully!");
+// Simple placeholder for interactive features
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Portfolio website loaded successfully!");
+});
