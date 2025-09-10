@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manivannan E | Finance Professional</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ManiOnline - Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2b5876, #4e4376);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .email-box input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 1em;
+    }
+    .email-box button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #ff9800;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .email-box button:hover {
+      background: #e68900;
+    }
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Manivannan E</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <h1>ManiOnline</h1>
+    <p>We are working hard to bring you something amazing.<br />Stay tuned for our launch!</p>
+    <div class="email-box">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Notify Me</button>
+      </form>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Finance | Equity Research | Training</h2>
-      <p>CFA Level III Candidate | Equity Research Analyst | Financial Modeling Expert | Trainer in Finance & Analytics</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a finance professional passionate about equity research, corporate finance, and portfolio management. 
-        With expertise in building detailed financial models (DCF, LBO, 3-statement models) and deep understanding of 
-        accounting fundamentals, I help bridge the gap between finance theory and practical application.  
-        I also mentor students and professionals preparing for CFA and finance careers.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Key Skills</h2>
-      <ul>
-        <li>Equity Research & Valuation</li>
-        <li>Financial Modeling (DCF, LBO, M&A)</li>
-        <li>Accounting & Corporate Finance</li>
-        <li>Portfolio Management (CFA Level III)</li>
-        <li>Power BI & Data Analytics</li>
-        <li>Training & Mentorship</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li>Equity Research Report – Hindustan Foods Ltd</li>
-        <li>LBO Model – Step-by-step teaching model</li>
-        <li>Power BI Dashboard – Sales & Finance Analytics</li>
-        <li>Training Materials – Accounting & Finance Fundamentals</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:manivannan.elumalai@outlook.com">manivannan@example.com</a></p>
-      <p>LinkedIn: <a href="www.linkedin.com/in/manivannan-e-855162314" target="_blank">linkedin.com/in/YOUR-LINKEDIN</a></p>
-      <p>GitHub: <a href="https://github.com/YOUR-GITHUB" target="_blank">github.com/YOUR-GITHUB</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Manivannan E. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+      &copy; <span id="year"></span> ManiOnline. All rights reserved.
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
